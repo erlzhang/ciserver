@@ -1,0 +1,14 @@
+---
+ environment: production
+ chdir: /home/erl/workspace/ciserver
+ address: 127.0.0.1
+ user: erl
+ group: erl
+ port: 4567
+ pid: /home/erl/workspace/ciserver/thin.pid
+ rackup: /home/erl/workspace/ciserver/config.ru
+ log: /home/erl/workspace/ciserver/thin.log
+ max_conns: 1024
+ timeout: 30
+ max_persistent_conns: 512
+ daemonize: true
